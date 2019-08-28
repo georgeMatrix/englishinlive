@@ -23,7 +23,7 @@ class ControlEscolar extends Model
         'nombreCompleto'
     ];
 
-    public function niveles(){
-        $this->belongsTo(Nivel::class, niveles);
+    public function nivelesMethod(){
+        return $this->belongsTo(Nivel::class, 'niveles');
     }
 }
