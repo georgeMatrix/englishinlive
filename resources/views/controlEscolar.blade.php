@@ -1,0 +1,31 @@
+@extends('layouts.layout')
+@section('contenido')
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Grupo</th>
+                <th>Escolaridad</th>
+                <th>No._de_Control</th>
+                <th>Ciclo_Escolar</th>
+                <th>Edad</th>
+                <th>Incorporados</th>
+                <th>Sexo</th>
+                <th>Nivel</th>
+                <th>Maestro</th>
+                <th>Horario_Sep</th>
+                <th>Curp</th>
+                <th>Horario</th>
+                <th>Modulos_Acreditados</th>
+                <th>Nombre_Completo</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach($registros as $registro)
+            <tr>
+                <td>{{$registro->id}}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+@endsection
