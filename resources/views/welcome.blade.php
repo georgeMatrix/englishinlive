@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{asset('img/englishinlive.jpeg')}}" alt="" width="400px">
+                    <a href="{{url('controlEscolar')}}"><img src="{{asset('img/englishinlive.jpeg')}}" alt="" width="400px"></a>
                 </div>
             </div>
         </div>

@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('controlEscolar', 'ControlEscolarController');
+Route::resource('controlEscolar', 'ControlEscolarController')->middleware('auth');
 Route::resource('baseDeDatos', 'BaseDeDatosController');
 Route::resource('calificaciones', 'CalificacionesController');
